@@ -3,7 +3,7 @@
 describe('Funcionalidade da página de produtos', () => {
 
   beforeEach(() => {
-    cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+    cy.visit('produtos')
   });
 
   it('Deve selecionar um produto da lista', () => {
@@ -12,11 +12,13 @@ describe('Funcionalidade da página de produtos', () => {
     .click()
   });
 
-  it.only('deve adicionar um produto ao carrinho', () => {
-    var quantidade = 3
+  it('deve adicionar um produto ao carrinho', () => {
+    var quantidade = 2
+
     cy.get('[class="product-block grid"]')
-    .first()
-    .click()
+    //.first()
+    //.click()
+        .contains('Abominable Hoodie').click()
     cy.get('.button-variable-item-M').click()
     cy.get('.button-variable-item-Green').click()
     cy.get('.input-text').clear().type(quantidade)
@@ -24,7 +26,10 @@ describe('Funcionalidade da página de produtos', () => {
 
     cy.get('.dropdown-toggle > .mini-cart-items').should('contain' , quantidade)
     cy.get('.woocommerce-message').should('contain' , quantidade + ' × “Abominable Hoodie” foram adicionados no seu carrinho.')
-    
+  });
+
+  it.only('Deve adicionar produtos ao carrinho - utilizando comando customizados', () => {
+    cy.addProdutos('Abominable Hoodie', 3)
   });
   
 });
