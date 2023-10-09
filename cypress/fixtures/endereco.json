@@ -1,0 +1,49 @@
+[
+    {
+        "nome": "Ana",
+        "sobrenome": "Luciano",
+        "empresa": "NUBANK",
+        "endereco": "Rua tchurusbago",
+        "numero": "777",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São paulo",
+        "CEP": "01000100",
+        "telefone": "11999999999",
+        "email": "teste@teste.com"
+
+    },
+    {
+        "nome": "bruno",
+        "sobrenome": "goeiro",
+        "empresa": "palmeiras",
+        "endereco": "Rua tchurusbago",
+        "numero": "777",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São paulo",
+        "CEP": "01000100",
+        "telefone": "11999999999",
+        "email": "teste@teste.com"
+
+    },
+    {
+    "nome": "cassia",
+    "sobrenome": "bittencurt",
+    "empresa": "rock",
+    "endereco": "Rua tchurusbago",
+    "numero": "777",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estado": "São paulo",
+    "CEP": "01000100",
+    "telefone": "11999999999",
+    "email": "teste@teste.com"
+
+    }
+  
+
+
+
+
+]

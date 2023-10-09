@@ -31,5 +31,5 @@ describe('Funcionalidade da página de produtos', () => {
   it.only('Deve adicionar produtos ao carrinho - utilizando comando customizados', () => {
     cy.addProdutos('Abominable Hoodie', 3)
   });
-  
+
 });
